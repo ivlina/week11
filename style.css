@@ -1,3 +1,43 @@
+img {
+    width: 50%;
+}
+
+.header {
+    margin-left: 10px;
+}
+
 .berry-section {
     border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+
+    margin: 10px;
+}
+
+.price {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+}
+
+.price-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.discount-button {
+    padding: 10px;
+}
+
+.summ-price {
+    width: fit-content;
 }
